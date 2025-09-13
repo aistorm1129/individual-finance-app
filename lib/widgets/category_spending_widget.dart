@@ -40,7 +40,7 @@ class CategorySpendingWidget extends StatelessWidget {
               final categoryEntry = entry.value;
               final category = provider.getCategoryById(categoryEntry.key);
               final amount = categoryEntry.value;
-              final percentage = totalAmount > 0 ? (amount / totalAmount) * 100 : 0;
+              final percentage = totalAmount > 0 ? (amount / totalAmount) * 100 : 0.0;
 
               if (category == null) return const SizedBox();
 
